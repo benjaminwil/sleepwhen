@@ -1,0 +1,262 @@
+html body {
+   font-family: 'Webly Sleek';
+   font-size: 16pt;
+   color: grey;
+   -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+h1 {
+   font-size: 20pt;
+   font-weight: 200;
+   display: inline;
+   color: grey;
+}
+h1:hover {
+   color: white;
+   }
+#read:hover {
+   color: white;
+}
+h2 {
+   font-size: 16pt;
+   font-weight: 200;
+   padding-top: 0.75em;
+   padding-bottom: 0.75em;
+   line-height: 1.2em;
+}
+#read {
+   color: grey;
+}
+.neversmall {
+   font-size: 16pt;
+   display: inline;
+   padding-bottom: 1.2em;
+}
+a {
+   color: grey;
+   text-decoration: none;
+}
+a:hover {
+   color: white;
+}
+div {
+   background: none;
+}
+p {
+   padding-bottom: 1em;
+   line-height: 1.4em;
+}
+p.clock {
+   font-family: 'Liquid Crystal';
+   font-size: 36pt;
+}
+p.small {
+   font-size: 12pt;
+
+}
+#sleepwhen, #alert {
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   display: block;
+   background-color: rgba(43,43,43,0.99);
+   z-index: 105; 
+   margin: 0 auto;
+}
+#essay {
+   width: 100%; height: 100%;
+   position: fixed;
+   display: block;
+   background-color: rgba(43,43,43,0.99);
+   z-index: 105;
+   padding: 10%;
+   overflow: auto;
+   user-select: text;
+   -webkit-touch-callout: text;
+   -webkit-user-select: text;
+   -khtml-user-select: text;
+   -moz-user-select: text;
+   -ms-user-select: text;
+}
+#essay p ul {
+   line-height: 1.6em;
+
+}
+sup {
+   line-height: 1em;
+   padding-left: 2px;
+   font-size: 10pt;
+}
+#essay a {
+   color: white;
+}
+#essay a:hover {
+   color: grey;
+}
+
+ul {
+   padding-left: 8%; padding-right: 8%;
+   list-style-type: circle;
+}
+ol, #footnotes {
+   padding-top: 3%;
+   font-size: 12pt;
+   list-style-position: outside;
+   line-height: 1.8em;
+}
+#description, #browser {
+   margin: auto;
+   padding: 0 12% 12% 12%;
+   max-height: 150px;
+   position: absolute;
+   top: 0; right: 0; bottom: 0; left: 0;
+   overflow: hidden;
+}
+#alert, #browser {
+   display: none;
+   z-index: 999;
+}
+#info, #back {
+   position: fixed;
+   right: 4px;
+   font-size: 12pt;
+   text-decoration: none;
+   z-index: 110; 
+}
+#inside {
+   overflow: hidden;
+   text-align: center;
+   width: 100%;
+   height: 100%;
+   position: fixed;
+}
+#outermap {
+   margin: auto;
+   height: 88%;
+   max-width: 553px;
+   position: absolute;
+   top: 0; right: 0; bottom: 0; left: 0;
+   z-index: 101;
+}
+#map {
+   margin: 4em auto;
+   max-width: 553px;
+   height: 66%;
+   position: absolute;
+   top: 0; right: 0; bottom: 0; left: 0;
+   z-index: 101;
+   clear: both;
+}
+#mapnote {
+   color: black;
+   height: 3em;
+   margin-top: 1em;
+}
+#mapexit {
+   margin: auto;
+   bottom: 0;
+   color: black;
+   padding-top: 1.5em;
+}
+img.resize {
+   height: 66%;
+   width: auto;
+}
+* {
+   margin: 0;
+   padding: 0;
+   position: relative;
+   outline: none;
+   cursor: pointer;
+   -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   user-select: none;
+/* box sizing */
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+.grid {
+   margin: auto;
+   width: 100%;
+   height: 33%;
+   position: absolute;
+   top: 0; right: 0; bottom: 0; left: 0;
+}
+.unit {
+   display: inline-block;
+   margin: 5%;
+   max-width: 220px;
+   /* clearfix */
+   height: 100%;
+}
+.one-of-three {
+   width: 30.36%;
+   min-width: 80px;
+}
+button {
+   background: white;
+   border: none;
+   display: block;
+   font-family: 'Webly Sleek';
+   padding: 2%;
+   text-align: left;
+   font-size: 16pt;
+}
+span {
+   position: absolute;
+   line-height: 1.2em;
+   top: 0;
+   height: 100%;
+}
+@media screen and (device-orientation: portrait) {
+   #alert, #browser {
+      display: block;
+      padding: auto;
+      height: 100%;
+      font-size: 12pt;
+   }
+   #browser {
+      padding: 3em 10% 0 10%;
+   }
+   h2 {
+      font-size: 12pt;
+   }
+}
+@media screen and (max-width: 955px) {
+   .unit {
+      margin: 2%;
+      width: 23.36%;
+      height: 100%;
+      font-size: 12pt;
+      }
+   .grid {
+      height: 66%;
+      top: 33%;
+      }
+   p.clock {
+      font-size: 14pt;
+   }
+   #mapnote {
+      font-size: 12pt;
+   }
+  
+}
+@media screen and (max-width: 400px) { 
+   .grid {
+      width: 50%;
+      min-height: 100%;
+      padding-top: 1.5em;
+      top: 17.5%;
+      }
+   .unit {
+      min-width: 100%;
+      height: 30.36%;
+      font-size: 12pt;
+   }
+   #mapnote {
+      font-size: 12pt;
+   }
+
+}
+*/

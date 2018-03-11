@@ -1,0 +1,234 @@
+.floorplan, .room {
+	border: 1px solid #000;
+}
+.room {
+	position: absolute;
+	background: #fff;
+}
+.floorplan {
+	background: #fff;
+	height: 325px;
+	position: relative;
+	width: 550px;
+}
+#kitchen {
+	border-bottom: none;
+	height: 149px;
+	width: 250px;
+	top: -1px; left: -1px;
+}
+#stairs {
+	border-top: none;
+	height: 40px;
+	width: 75px;
+	top: 148px; left: -1px;
+	z-index: 101;
+}
+#stairs:after {
+	content: '';
+	position: absolute;
+	top: 0px; right: 0;
+	width: 45%;
+	border-top: 1px solid #000;
+}
+#stairone {
+	border-right: none;
+	height: 39px;
+	width: 0px;
+	top: 148px; left: 58px;
+	z-index: 105;
+}
+#stairtwo {
+		border-right: none;
+	height: 39px;
+	width: 0px;
+	top: 148px; left: 63px;
+	z-index: 105;
+}
+#stairthree {
+		border-right: none;
+	height: 39px;
+	width: 0px;
+	top: 148px; left: 68px;
+	z-index: 105;
+}
+
+#entrancecloset {
+	height: 40px;
+	width: 50px;
+	top: 190px; left: 203px;
+	z-index: 101;
+}
+#entrancecloset:after {
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	left: 16.5%;
+	width: 66%;
+	border-bottom: 1px solid #000;
+}
+#hallway {
+	border: none;
+	height: 40px;
+	width: 225px;
+	top: 149px; left:250px;
+}
+#hallcloset {
+	height: 44px;
+	width: 30px;
+	top: 147px; left: 475px;
+}
+#hallclosetdoor {
+	height: 25px;
+	width: 0px;
+	top: 156px; left: 474px;
+	border: 1px solid #000;
+}
+#mastercloset {
+	height: 73px;
+	width: 46px;
+	top: 147px; left: 504px;
+	z-index: 101;
+}
+#mastercloset:after {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: 16.5%;
+	width: 66%;
+	border-top: 1px solid #000;
+}
+#livingroom {
+   border-right: none; border-top: none;
+   height: 195px;
+   width: 251px;
+   top: 149px; left: -1px;
+   z-index: 100; 
+}
+#livingroomwall {
+	border-bottom: none;
+	width: 76px;
+	height: -2px;
+	top: 148px; left: 74px;
+	z-index: 101;
+}
+#livingroomwallagain {
+	border-left: none;
+	height: 20px;
+	width: 0px;
+	top: 324px; left: 250px; 
+	z-index: 101;
+}
+#bathroomcloset {
+	height: 40px;
+	width: 32px;
+	top: 108px; left: 329px;
+	z-index: 101;
+}
+#bathroomclosetdoor {
+	height: 25px;
+	width: 0px;
+	top: 115px; left: 328px;
+	border: 1px solid #000;
+	z-index: 101;
+}
+#bathroom {
+	height: 149px;
+	width: 135px;
+	top: -1px; left: 248px;
+}
+#bathroomdoor {
+	height: 0px;
+	width: 28px;
+	top: 147px; left: 273px; 
+	z-index: 101;
+}
+#ensuite {
+	height: 50px;
+	width: 60px;
+	top: -1px; left: 360px;
+}
+#ensuitedoor {
+	height: 25px;
+	width: 0px;
+	top: 10px; left: 419px;
+	border: 1px solid #000;
+}
+#masterbedroom {
+	height: 149px;
+	width: 190px;
+	top: -1px; left: 360px;
+}
+#masterbedroomdoor {
+	height: 0px;
+	width: 28px;
+	top: 147px; left: 378px; 
+	z-index: 101;
+}
+#dencloset {
+	height: 40px;
+	width: 30px;
+	top: 190px; left: 250px;
+	z-index: 101;
+}
+#denclosetdoor {
+	height: 25px;
+	width: 0px;
+	top: 198px; left: 279px;
+	border: 1px solid #000;
+	z-index: 102;
+}
+#den {
+	height: 134px;
+	width: 126px;
+	top: 190px; left: 250px;
+}
+#dendoor {
+	height: 0px;
+	width: 28px;
+	top: 190px; left: 316px; 
+	z-index: 101;
+}
+#bedroom {
+	height: 134px;
+	width: 175px;
+	top: 190px; left: 375px;
+}
+#bedroomdoor {
+	height: 0px;
+	width: 28px;
+	top: 190px; left: 400px; 
+	z-index: 101;
+}
+#bedroomcloset {
+	height: 30px;
+	width: 46px;
+	top: 190px; left: 459px;
+}
+#bedroomcloset:after {
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	left: 16.5%;
+	width: 66%;
+	border-bottom: 1px solid #000;
+}
+#frontdoor {
+	height: 0px;
+	width: 31px;
+	top: 343px; left: 209px; 
+	z-index: 101;
+}
+#backdoor {
+	height: 0px;
+	width: 62px;
+	top: -1px; left: 166px; 
+	z-index: 101;
+}
+#sidedoor {
+	height: 31px;
+	width: 0px;
+	top: 152px; left: -2px; 
+	z-index: 102;
+}
+
